@@ -1,0 +1,30 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Assignment_4.Site" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>mySite</title>
+    <link rel="stylesheet" type="text/css" href="App_Themes/Default/Style.css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="header">
+            <h1>MySite</h1>
+        </div>
+        <div class="menu">
+            <asp:HyperLink ID="lnkResume" runat="server" NavigateUrl="~/Resume.aspx">Resume</asp:HyperLink>|
+            <asp:HyperLink ID="lnkGallery" runat="server" NavigateUrl="~/PhotoGallery.aspx">Photo Gallery</asp:HyperLink>|
+            <asp:HyperLink ID="lnkContact" runat="server" NavigateUrl="~/ContactUs.aspx">Contact Us</asp:HyperLink>
+        </div>
+        <div class="content">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>
+        </div>
+        <div class="footer">
+            <p>2025: © 2025: ALL RIGHTS RESERVED || 23SOECE13015_DAXA GABU</p>
+        </div>
+    </form>
+</body>
+</html>
