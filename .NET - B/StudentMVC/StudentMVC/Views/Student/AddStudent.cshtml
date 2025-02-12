@@ -1,0 +1,36 @@
+﻿<h1>Hello Student.................</h1>
+
+<form asp-action="Create" method="post">
+    <div class="mb-3">
+        <label for="Student_Name">Student Name</label>
+        <input type="text" class="form-control" asp-for="Student_Name">
+        <span class="text-danger" asp-validation-for="Student_Name"></span>
+    </div>
+
+    <div class="mb-3">
+        <label for="Student_Email">Student Email</label>
+        <input type="email" class="form-control" asp-for="Student_Email">
+        <span class="text-danger" asp-validation-for="Student_Email"></span>
+    </div>
+
+    <div class="mb-3">
+        <label for="Student_Phone">Student Phone</label>
+        <input type="text" class="form-control" asp-for="Student_Phone">
+        <span class="text-danger" asp-validation-for="Student_Phone"></span>
+    </div>
+
+    <div class="mb-3">
+        <label for="Student_Age">Student Age</label>
+        <input type="number" class="form-control" asp-for="Student_Age">
+        <span class="text-danger" asp-validation-for="Student_Age"></span>
+    </div>
+
+    <div class="mb-3">
+        <label for="Student_Branch">Student Branch</label>
+        <input type="text" class="form-control" asp-for="Student_Branch">
+        <span class="text-danger" asp-validation-for="Student_Branch"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
