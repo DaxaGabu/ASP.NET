@@ -1,0 +1,38 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="MySite.Site" %>
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+    <title>MySite</title>
+    <link rel="stylesheet" type="text/css" href="Styles.css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="container">
+            <header>
+                <div class="logo">MySite</div>
+                <div class="contact">
+                    NAME abc<br />
+                    EMAILID: abc@gmail.com
+                </div>
+            </header>
+
+            <nav>
+            <asp:HyperLink ID="lnkResume" runat="server" NavigateUrl="~/Resume.aspx" Text="Resume"></asp:HyperLink>
+<br />
+<asp:HyperLink ID="lnkPhotoGallery" runat="server" NavigateUrl="~/PhotoGallery.aspx" Text="Photo Gallery"></asp:HyperLink>
+<br />
+<asp:HyperLink ID="lnkContactUs" runat="server" NavigateUrl="~/ContactUs.aspx" Text="Contact Us"></asp:HyperLink>
+    
+            </nav>
+
+            <section>
+                <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+            </section>
+
+            <footer>
+                © 2012: ALL RIGHTS ARE RESERVED
+            </footer>
+        </div>
+    </form>
+</body>
+</html>
