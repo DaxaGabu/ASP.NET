@@ -7,16 +7,16 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{B5D37E2F-58A5-4904-B8AF-E4EBB4D476A1}</ProjectGuid>
+    <ProjectGuid>{FF37DAB0-CD52-463B-ACB3-929B150B5FDB}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MySite</RootNamespace>
-    <AssemblyName>MySite</AssemblyName>
+    <RootNamespace>EmployeeProject</RootNamespace>
+    <AssemblyName>EmployeeProject</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
-    <IISExpressSSLPort>44338</IISExpressSSLPort>
+    <IISExpressSSLPort>44391</IISExpressSSLPort>
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
@@ -67,54 +67,22 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\ContactUs.aspx" />
-    <Content Include="Content\PhotoGallery.aspx" />
-    <Content Include="Content\Styles.css" />
-    <Content Include="Global.asax" />
-    <Content Include="Images\photo1.jpg" />
-    <Content Include="Images\photo2.jpg" />
-    <Content Include="Images\photo3.jpg" />
-    <Content Include="Resume.aspx" />
+    <Content Include="EmployeeForm.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Content\ContactUs.aspx.cs">
-      <DependentUpon>ContactUs.aspx</DependentUpon>
+    <Compile Include="DAL\DatabaseHelper.cs" />
+    <Compile Include="EmployeeForm.aspx.cs">
+      <DependentUpon>EmployeeForm.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Content\ContactUs.aspx.designer.cs">
-      <DependentUpon>ContactUs.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Content\PhotoGallery.aspx.cs">
-      <DependentUpon>PhotoGallery.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Content\PhotoGallery.aspx.designer.cs">
-      <DependentUpon>PhotoGallery.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Global.asax.cs">
-      <DependentUpon>Global.asax</DependentUpon>
+    <Compile Include="EmployeeForm.aspx.designer.cs">
+      <DependentUpon>EmployeeForm.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Resume.aspx.cs">
-      <DependentUpon>Resume.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Resume.aspx.designer.cs">
-      <DependentUpon>Resume.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Site.Master.cs">
-      <DependentUpon>Site.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Site.Master.designer.cs">
-      <DependentUpon>Site.Master</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Images\.editorconfig" />
     <None Include="packages.config" />
-    <Content Include="Site.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -122,10 +90,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
@@ -139,9 +104,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>58021</DevelopmentServerPort>
+          <DevelopmentServerPort>50456</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>https://localhost:44338/</IISUrl>
+          <IISUrl>https://localhost:44391/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

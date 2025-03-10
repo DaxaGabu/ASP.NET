@@ -3,7 +3,14 @@
 <html lang="en">
 <head runat="server">
     <title>MySite</title>
-    <link rel="stylesheet" type="text/css" href="Styles.css" />
+    <link rel="stylesheet" type="text/css" href="Content/Styles.css" />
+
+    <style type="text/css">
+        .contact {
+            width: 588px;
+        }
+    </style>
+
 </head>
 <body>
     <form id="form1" runat="server">
@@ -11,17 +18,18 @@
             <header>
                 <div class="logo">MySite</div>
                 <div class="contact">
-                    NAME abc<br />
-                    EMAILID: abc@gmail.com
+                    NAME : Gabu Daxaben R.<br />
+                    EMAILID: daxagabu07@gmail.com
                 </div>
             </header>
 
             <nav>
-            <asp:HyperLink ID="lnkResume" runat="server" NavigateUrl="~/Resume.aspx" Text="Resume"></asp:HyperLink>
+            <asp:HyperLink ID="lnkResume" runat="server" NavigateUrl="~/Resume.aspx" Text="Resume" Width="200px"></asp:HyperLink>
+<asp:HyperLink ID="lnkPhotoGallery" runat="server" NavigateUrl="~/PhotoGallery.aspx" Text="Photo Gallery" Width="200px"></asp:HyperLink>
+<asp:HyperLink ID="lnkContactUs" runat="server" NavigateUrl="~/ContactUs.aspx" Text="Contact Us" Width="200px"></asp:HyperLink>
+    
 <br />
-<asp:HyperLink ID="lnkPhotoGallery" runat="server" NavigateUrl="~/PhotoGallery.aspx" Text="Photo Gallery"></asp:HyperLink>
 <br />
-<asp:HyperLink ID="lnkContactUs" runat="server" NavigateUrl="~/ContactUs.aspx" Text="Contact Us"></asp:HyperLink>
     
             </nav>
 

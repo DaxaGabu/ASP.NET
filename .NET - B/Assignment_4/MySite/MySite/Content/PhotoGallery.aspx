@@ -3,8 +3,9 @@
 
     <h1>Photo Gallery</h1>
     <div class="gallery">
-        <img src="Images/photo1.jpg" width="200" height="150" alt="Photo 1" />
-        <img src="Images/photo2.jpg" width="200" height="150" alt="Photo 2" />
-        <img src="Images/photo3.jpg" width="200" height="150" alt="Photo 3" />
+        <img src="<%= ResolveUrl("~/Images/photo1.jpg") %>" width="200" height="150" alt="Photo 1" />
+<img src="<%= ResolveUrl("~/Images/photo2.jpg") %>" width="200" height="150" alt="Photo 2" />
+<img src="<%= ResolveUrl("~/Images/photo3.jpg") %>" width="200" height="150" alt="Photo 3" />
+
     </div>
 </asp:Content>
