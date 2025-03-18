@@ -10,16 +10,21 @@ namespace State_Managament_Demo.Controllers
         }
         public IActionResult TransferAmmount()
         {
-            ViewData["test"] = "RKUniversity";
             return View();
 
         }
 
-        public IActionResult TransferVerificatoin()
+
+        [HttpPost]
+        public IActionResult TransferVerification(string fromaccount, string fromaccountholdername, string toaccount, string toaccountholdername, string amount)
         {
+            ViewBag.FromAccount = fromaccount;
+            ViewBag.AccountHolder = fromaccountholdername;
+            ViewBag.ToAccount = toaccount;
+            ViewBag.ToAccountHolder = toaccountholdername;
+            ViewBag.Amount = amount;
             return View();
         }
-
 
     }
 }

@@ -25,10 +25,7 @@ namespace State_Managament_Demo.Controllers
         {
             return View();
         }
-
-
-
-     
+             
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

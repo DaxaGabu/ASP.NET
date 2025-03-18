@@ -1,0 +1,36 @@
+﻿
+@{
+    ViewData["Title"] = "TransferAmmount";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>TransferAmmount</h1>
+<form asp-controller="Home" asp-action="TransferVerification">
+    <div class="form-group">
+        <label for="fromaccount">From AccountNo : </label>
+        <input type="text" class="form-control" id="fromaccount" name="fromaccount">
+    </div>
+    <br />
+    <div class="form-group">
+        <label for="fromaccountholdername">From Account Holder Name : </label>
+        <input type="text" class="form-control" id="fromaccountholdername" name="fromaccountholdername">
+    </div>
+    <br />
+    <div class="form-group">
+        <label for="toaccount">To AccountNo : </label>
+        <input type="text" class="form-control" id="toaccount" name="toaccount">
+    </div>
+    <br />
+    <div class="form-group">
+        <label for="toaccountholdername">To Account Holder Name : </label>
+        <input type="text" class="form-control" id="toaccountholdername" name="toaccountholdername">
+    </div>
+    <br />
+    <div class="form-group">
+        <label for="amount">Amount : </label>
+        <input type="text" class="form-control" id="amount" name="amount">
+    </div>
+    <br />
+    <button type="submit" class="btn btn-primary">Transfer</button>
+</form>
+
