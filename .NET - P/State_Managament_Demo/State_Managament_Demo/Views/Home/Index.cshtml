@@ -1,4 +1,6 @@
-﻿@{
+﻿@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor contx
+@{
     ViewData["Title"] = "Home Page";
 }
 
@@ -9,3 +11,10 @@
 <br />
 <br />
 @TempData["test3"]
+
+Rollno: @contx.HttpContext.Session.GetInt32("Roll no")
+<br />
+<br />
+
+
+Name: @contx.HttpContext.Session.GetString("StudentName")

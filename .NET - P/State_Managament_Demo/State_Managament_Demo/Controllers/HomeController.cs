@@ -16,6 +16,7 @@ namespace State_Managament_Demo.Controllers
         {
 
             this.contex = contex;
+
         }
         public HomeController(ILogger<HomeController> logger)
         {
@@ -24,9 +25,12 @@ namespace State_Managament_Demo.Controllers
 
         public IActionResult Index()
         {
-            ViewData["test"] = "RKUniversity";
-            ViewBag.test2 = "RKUniversity - Rajkot";
-            TempData["test3"] = "RKUniversity - Rajkot,Gujarat";
+            //ViewData["test"] = "RKUniversity";
+            //ViewBag.test2 = "RKUniversity - Rajkot";
+            //TempData["test3"] = "RKUniversity - Rajkot,Gujarat";
+
+            contex.HttpContext.Session.SetInt32("Rollno", 52);
+            contex.HttpContext.Session.SetString("StudentName", "Rku");
             return View();
         }
 
