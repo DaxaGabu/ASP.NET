@@ -1,6 +1,7 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using State_Managament_Demo.Models;
+using Microsoft.AspNetCore.Http;
 
 namespace State_Managament_Demo.Controllers
 {
@@ -8,6 +9,14 @@ namespace State_Managament_Demo.Controllers
     {
         private readonly ILogger<HomeController> _logger;
 
+
+        private readonly IHttpContextAccessor contex;
+
+        public HomeController(IHttpContextAccessor contex)
+        {
+
+            this.contex = contex;
+        }
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
